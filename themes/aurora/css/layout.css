@@ -1,0 +1,86 @@
+/* #region Main */
+
+.main p {
+    margin: 5px 20px 5px 20px;
+}
+
+.main {
+    padding: 50px 100px 50px 100px;
+}
+
+/* #endregion */
+
+/* #region Figure */
+
+.fig-pfp {
+    border-radius: 20px;
+    background-color: #111;
+    padding: 15px;
+    margin: 15px;
+    width: fit-content;
+}
+
+.fig-pfp figcaption {
+    margin-top: 15px;
+}
+
+.pfp {
+    display: flex;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* #endregion */
+
+/* #region Placement */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 0 auto;
+    background-color: #222;
+    color: whitesmoke; 
+}
+
+.header, .footer {
+    flex: 0 0 auto;
+}
+
+/* #endregion */
+
+/* #region Title */
+
+.title, .logo {
+    padding: 3em 3em 3em 0;
+}
+
+.logo {
+    width: 256px;
+}
+
+@media (max-width: 767px) {
+    .title, .logo {
+        padding: 1em 1em 1em 0;
+    }
+    .title {
+        min-width: 50%;
+    }
+    .logo {
+        max-width: 30%;
+    }
+}
+
+.title * {
+    color: #111;
+}
+
+.title p {
+    font-style: italic;
+}
+
+/* #endregion */

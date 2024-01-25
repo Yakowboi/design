@@ -15,73 +15,58 @@ ol, ul {
 
 html, body {
     height: 100%;
+    font-family: 'Comfortaa', sans-serif !important;
 }
 
-/* Placement */
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.main {
-    flex: 1 0 auto;
-}
-
-.header, .footer {
-    flex: 0 0 auto;
-}
-
-/* Header */
+/* #region Header */
 
 .header, .site-header {
     display: flex;
     justify-content: space-between;
 }
 
-/* Title */
-
-.title, .logo {
-    padding: 3em 3em 3em 0;
+.header {
+    background-color: #111;
 }
 
-@media (max-width: 767px) {
-    .title, .logo {
-        padding: 1em 1em 1em 0;
-    }
-    .title {
-        min-width: 50%;
-    }
-    .logo {
-        max-width: 30%;
-    }
+.header p,
+.header h1 {
+    color: whitesmoke;
 }
 
-.title * {
-    color: #111;
+.uheading {
+    color: #bbb;
 }
 
-.title p {
-    font-style: italic;
-}
+/* #endregion */
 
-/* Footer */
+/* #region Footer */
 
 .footer {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #222;
+    background-color: #111;
+    color: whitesmoke;
+    height: fit-content;
+    
 }
 
 .footer a {
-    color: #222;
+    color: whitesmoke;
 }
 
 .footer .social {
     font-size: 2rem;
 }
 
-/* Typografy */
+.footer div {
+    padding: 10px;
+}
+
+/* #endregion */
+
+/* #region Typografy */
 
 body {
     font-family: sans-serif;
@@ -104,7 +89,9 @@ img {
     max-width: 100%;
 }
 
-/* BELOW ARE PREPARED STYLES FOR CODE/PRE/BLOCKQUOTE, FEEL FREE TO REMOVE IT  */
+/* #endregion */
+
+/* #region BELOW ARE PREPARED STYLES FOR CODE/PRE/BLOCKQUOTE, FEEL FREE TO REMOVE IT  */
 
 /* Code */
 
@@ -113,7 +100,7 @@ code {
     padding: 0.1em 0.2em;
     border: 1px solid #ccc;
     border-radius: 0.3em;
-    background: #f5f5f5;
+    background: #444;
     font-family: monospace;
     font-size: 0.85rem;
     line-height: 1.9824;
@@ -123,7 +110,7 @@ pre {
     padding: 0 1em;
     border: 1px solid #ccc;
     border-radius: 0.3em;
-    background: #f5f5f5;
+    background: #444;
 }
 
 pre code {
@@ -142,5 +129,7 @@ blockquote {
     font-style: italic;
     margin-left: 1em;
     padding-left: 1em;
-    border-left: 0.5em solid #f5f5f5;
+    border-left: 0.5em solid #444;
 }
+
+/* #endregion */

@@ -1,0 +1,15 @@
+.header, .site-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    background-color: $bg-alt-color;
+
+    h1, p { color: $font-color; }
+}
+
+.uheading {
+    color: $font-alt-color;
+    font-weight: 200;
+}

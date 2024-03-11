@@ -29,5 +29,3 @@ Jag har deltagit i och vunnit 2 VR-turneringar och även placerat mig topp 4000 
 På min fritid ägnar jag mycket tid åt att vara med samt hjälpa mina föräldrar eftersom jag tycker min familj är det viktigaste för mig. Men brukar även skriva mycket med vänner genom Discord.
 
 <!-- ![mePFP](assets/img/mePFP.jpg "A picture that represents me"){.pfp} -->
-
-

@@ -1,0 +1,118 @@
+/* technology.scss */
+.landingpage {
+    position: relative;
+    left: -50%;
+    transform: translateX(50%);
+    display: grid;
+    gap: 1em 1em;
+
+    h1 {
+        grid-column: span 3;
+        justify-self: center;
+    }
+    
+    .html { grid-column: span 2; }
+    .js { grid-column: span 2; }
+    .py { grid-column: span 3; }
+    .sql { grid-column: span 2; }
+}
+
+.box {
+    position: relative;
+    background-color: $bg-alt-color;
+    border-radius: 15px;
+    padding: 30px 15px;
+    font-size: 2em;
+    text-align: center;
+    transition: background-color .5s;
+
+    a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    &:hover {
+        background-color: $btn-hover;
+        transition: background-color .5s;
+    }
+}
+
+
+
+.wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "sidebar main";
+    height: fit-content;
+
+    > div:not(.sidebar) {
+        grid-area: main;
+        padding: 15px;
+    }
+}
+
+.sidebar {
+    grid-area: sidebar;
+
+    .box {
+        padding: 15px 0;
+        margin: 5px 0;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .landingpage {
+        .css,
+        .html,
+        .js,
+        .php,
+        .py,
+        .git,
+        .sql { grid-column: span 1; }
+    }
+
+    .main { padding: 50px 25px; }
+}
+
+@media screen and (max-width: 860px) {
+    .landingpage {
+        .css,
+        .html,
+        .js,
+        .php,
+        .py,
+        .git,
+        .sql { grid-column: span 3; }
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas:
+        "sidebar"
+        "main";
+    }
+
+    .sidebar {
+        width: 100%;
+        height: fit-content;
+
+        .box {
+            padding: 10px 0;
+            margin: 5px 0;
+            font-size: 1em;
+        }
+    }
+
+    .main { padding: 50px; }
+}
+
+@media screen and (max-width: 660px) {
+    .landingpage { display: block; }
+    .sidebar { display: none; }
+}

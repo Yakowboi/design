@@ -47,6 +47,14 @@
     }
 }
 
+@media (max-width: 667px) { 
+    code {
+        margin: 0;
+        padding: 0;
+        font-size: 0.55rem;
+    } 
+}
+
 .title {
     * { color: $bg-alt-color; }
 

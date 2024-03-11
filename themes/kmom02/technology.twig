@@ -1,0 +1,54 @@
+
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+        <div class="landingpage wrapper">          
+            <div class="sidebar">
+                <div class="box">
+                    <a href="css"></a>
+                    CSS
+                </div>
+
+                <div class="box">
+                    <a href="html"></a>
+                    HTML
+                </div>
+
+                <div class="box">
+                    <a href="javascript"></a>
+                    JAVASCRIPT
+                </div>
+
+                <div class="box">
+                    <a href="php"></a>
+                    PHP
+                </div>
+
+                <div class="box">
+                    <a href="python"></a>
+                    PYTHON
+                </div>
+
+                <div class="box">
+                    <a href="git"></a>
+                    GIT
+                </div>
+
+                <div class="box">
+                    <a href="sqlite"></a>
+                    SQLITE
+                </div>
+            </div>
+            <div>
+                {{ content }}
+            </div>
+        </div>
+    </div>  
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>
